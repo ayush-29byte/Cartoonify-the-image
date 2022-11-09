@@ -1,5 +1,5 @@
-import cv2 #for image processing
-import easygui #to open the filebox
+import cv2 #importing opencv to process the image
+import easygui #to access and open the filebox
 import numpy as np #to store image
 import imageio #to read image stored at particular path
 
@@ -23,7 +23,7 @@ def upload():
 
 
 def cartoonify(ImagePath):
-    # read the image
+    #to read the image
     originalmage = cv2.imread(ImagePath)
     originalmage = cv2.cvtColor(originalmage, cv2.COLOR_BGR2RGB)
     #print(image)  # image is stored in form of numbers
